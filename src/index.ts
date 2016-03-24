@@ -12,9 +12,11 @@ import ensurePath from './ensurePath';
  *   deepUpdate(value, ['entities', 'currentUser'], {$set: {id: 'abc123'}});
  *
  */
-export default function deepUpdate(value:{}, path:string[], spec:update.ObjectSpec):{} {
+function deepUpdate(value:{}, path:string[], spec:update.ObjectSpec):{} {
   value = ensurePath(value, path);
   let expression = _.reduce([...path].reverse(), (s, k) => ({[k]: s}), spec);
 
   return update(value, expression);
 }
+
+export = deepUpdate;
