@@ -19,4 +19,5 @@ function deepUpdate(value:{}, path:string[], spec:update.ObjectSpec):{} {
   return update(value, expression);
 }
 
+module deepUpdate {} // Allow import * as deepUpdate from 'deep-update';
 export = deepUpdate;
