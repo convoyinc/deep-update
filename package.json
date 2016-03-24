@@ -1,6 +1,6 @@
 {
   "name": "deep-update",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-addons-update except that it will fill in object paths that are missing.",
   "homepage": "https://github.com/convoyinc/deep-update",
   "bugs": "https://github.com/convoyinc/deep-update/issues",
@@ -8,7 +8,9 @@
   "repository": "convoyinc/deep-update",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "./scripts/clean",
     "compile": "./scripts/compile",
