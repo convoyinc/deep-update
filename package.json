@@ -8,6 +8,7 @@
   "repository": "convoyinc/deep-update",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "clean": "./scripts/clean",
     "compile": "./scripts/compile",
