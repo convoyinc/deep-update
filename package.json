@@ -19,9 +19,6 @@
     "test:style": "./scripts/test:style",
     "test": "./scripts/test"
   },
-  "engines": {
-    "node": ">= 4.0.0"
-  },
   "dependencies": {
     "lodash": "^4.0.0",
     "react-addons-update": "^0.14.8"
