@@ -13,6 +13,7 @@
     "*.md"
   ],
   "scripts": {
+    "bump": "./scripts/bump",
     "clean": "./scripts/clean",
     "compile": "./scripts/compile",
     "prepublish": "./scripts/prepublish",
