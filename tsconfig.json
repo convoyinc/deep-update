@@ -10,12 +10,5 @@
     "outDir": "./dist/",
     "pretty": true,
     "target": "es5"
-  },
-  // Until https://github.com/Microsoft/TypeScript/pull/5980 lands, this must be
-  // filled in manually.
-  "files": [
-    "src/ensurePath.ts",
-    "src/index.ts",
-    "typings/main.d.ts"
-  ]
+  }
 }

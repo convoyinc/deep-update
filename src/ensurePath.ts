@@ -1,5 +1,5 @@
 import * as _ from 'lodash';
-import * as update from 'react-addons-update';
+import * as update from 'immutability-helper';
 
 /**
  * Ensures that `state` has a series of nested objects matching the keys defined
