@@ -13,12 +13,12 @@
     "*.md"
   ],
   "scripts": {
-    "bump": "./scripts/bump",
     "clean": "./scripts/clean",
     "compile": "./scripts/compile",
     "prepublish": "./scripts/prepublish",
-    "test:style": "./scripts/test:style",
-    "test": "./scripts/test"
+    "release": "./scripts/release",
+    "test": "./scripts/test",
+    "test:style": "./scripts/test:style"
   },
   "dependencies": {
     "immutability-helper": "^2.0.0",
