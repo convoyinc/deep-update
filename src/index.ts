@@ -1,5 +1,5 @@
 import * as _ from 'lodash';
-import * as update from 'react-addons-update';
+import * as update from 'immutability-helper';
 
 import ensurePath from './ensurePath';
 

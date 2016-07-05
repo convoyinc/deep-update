@@ -4,6 +4,8 @@ machine:
 
 test:
   override:
+    - npm run compile
+
     - npm run test:style:
         parallel: true
         files:
