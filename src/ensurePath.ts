@@ -8,9 +8,9 @@ import * as update from 'immutability-helper';
  * If any are missing, they will be built. The original `state` and its children
  * are **not** mutated.
  */
-export default function ensurePath(value:{}, path:string[]):{} {
-  if (!_.every(path, _.isString)) {
-    throw new TypeError(`fillPath can only construct objects. Please pass string keys for the path.`);
+export default function ensurePath(value:{}, path:(string|number)[]):{} {
+  if (!_.every(path, stringOrInt)) {
+    throw new TypeError(`ensurePath can only construct objects. Please pass string or integer keys for the path.`);
   }
 
   // Fill in all missing keys along the path.
@@ -28,4 +28,8 @@ export default function ensurePath(value:{}, path:string[]):{} {
   }
 
   return value;
+}
+
+function stringOrInt(value:any) {
+  return _.isString(value) || _.isInteger(value);
 }
