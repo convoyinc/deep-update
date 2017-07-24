@@ -15,7 +15,13 @@
   "scripts": {
     "clean": "./scripts/clean",
     "compile": "./scripts/compile",
-    "prepublish": "./scripts/prepublish",
+    "prepare": "echo prepare",
+    "prepublishOnly": "echo prepublishOnly",
+    "prepublish": "echo prepublish && ./scripts/prepublish",
+    "prepack": "echo prepack",
+    "postpack": "echo postpack",
+    "preinstall": "echo preinstall",
+    "install": "echo install",
     "release": "./scripts/release",
     "test": "./scripts/test",
     "test:style": "./scripts/test:style"
